@@ -1,0 +1,83 @@
+{
+  "models": [
+    {
+      "id": "yolox-qnn-npu",
+      "name": "YoloX",
+      "version": "1.0.0",
+      "publisher": "YourOrganization",
+      "description": "YoloX object detection model optimized for Qualcomm QNN NPU execution",
+      "executionProviders": [
+        {
+          "name": "QNNExecutionProvider",
+          "description": "Qualcomm Neural Network execution provider for NPU acceleration"
+        }
+      ],
+      "license": "MIT",
+      "sourceUrl": "https://huggingface.co/qualcomm/Yolo-X",
+      "files": [
+        {
+          "name": "Yolo-X_w8a8.onnx",
+          "url": "/models/Yolo-X_w8a8.onnx",
+          "size": 0,
+          "format": "onnx",
+          "quantization": "int8"
+        }
+      ]
+    },
+    {
+      "id": "yolox-vitis-ai",
+      "name": "YoloX",
+      "version": "1.0.0",
+      "publisher": "YourOrganization",
+      "description": "YoloX object detection model optimized for AMD Vitis AI execution",
+      "executionProviders": [
+        {
+          "name": "VitisAIExecutionProvider",
+          "description": "AMD Vitis AI execution provider for FPGA/DPU acceleration"
+        }
+      ],
+      "license": "MIT",
+      "sourceUrl": "https://huggingface.co/amd/yolox-s",
+      "files": [
+        {
+          "name": "yolox-s-int8.onnx",
+          "url": "/models/yolox-s-int8.onnx",
+          "size": 0,
+          "format": "onnx",
+          "quantization": "int8"
+        }
+      ]
+    },
+    {
+      "id": "yolox-cpu",
+      "name": "YoloX",
+      "version": "1.0.0",
+      "publisher": "YourOrganization",
+      "description": "YoloX object detection model for CPU execution (float32)",
+      "executionProviders": [
+        {
+          "name": "CPUExecutionProvider",
+          "description": "Standard CPU execution provider"
+        }
+      ],
+      "license": "MIT",
+      "sourceUrl": "https://huggingface.co/qualcomm/Yolo-X",
+      "files": [
+        {
+          "name": "Yolo-X_float.onnx",
+          "url": "/models/Yolo-X_float.onnx",
+          "size": 0,
+          "format": "onnx",
+          "quantization": "float32"
+        }
+      ]
+    }
+  ],
+  "generatedAt": "2024-01-01T00:00:00Z",
+  "publisher": "YourOrganization",
+  "version": "1.0.0",
+  "schema": {
+    "version": "1.0",
+    "description": "YoloX Model Catalog Schema"
+  }
+}

@@ -1,0 +1,26 @@
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Downloaded models (these are fetched dynamically, not stored in repo)
+*.onnx
+*.onnx.zip
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Azure deployment files with secrets
+*.parameters.local.json
+
+# Logs
+*.log
+logs/
